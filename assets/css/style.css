@@ -1,0 +1,5 @@
+.custom-input:focus{border-color: #14A76C;   /* change border color */ box-shadow: 0 0 0 0.25rem rgb(141, 204, 179); /* optional glow */}
+.navbar-toggler{color:  #14A76C !important}
+.skill-link{color: black;}
+.skill-link.active {color:  #14A76C !important;}
+.skill-link:focus, .skill-link:hover{color: #14A76C !important;}
