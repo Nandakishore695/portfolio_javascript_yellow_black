@@ -12,54 +12,61 @@
 <body>
     <div class="container my-5 col-xxl-10 px-4 py-5">
         <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5 dd">
-            <a type="button" href="https://nandakishore695.github.io/portfolio_javascript_yellow_black/" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></a>
+            <a type="button" href="https://nandakishore695.github.io/portfolio_javascript_yellow_black/"
+                class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill"
+                aria-label="Close" 
+                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Back To Portfolio"
+                ></a>
             <div class="row flex-lg-row-reverse align-items-center g-5 py-lg-5">
                 <div class="col-10 col-sm-8 col-lg-5">
-                    <textarea type="text" class="form-control form-control-lg" placeholder="Enter Your Text Here..." id="wordCount"
+                    <textarea class="form-control form-control-lg " placeholder="Enter Your Text Here..." id="wordCount"
                         aria-label=".form-control-lg example" autocomplete="off"></textarea>
                 </div>
                 <div class="col-lg-7">
                     <div class="py-lg-5">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-start">Count Your Charactor <br> Like a
-                        Boss...</h1>
-                        </div>
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-start">Count Your Charactor <br>
+                            Like a
+                            Boss...</h1>
+                    </div>
                     <hr>
                     <div class="row py-lg-5">
                         <div class="col">
-                            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center" id="charactorsNumber">0</h2>
-                            <p class="lead">Charactors 
+                            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center"
+                                id="charactorsNumber">0</h2>
+                            <p class="lead">Charactors
                             </p>
                         </div>
                         <div class="col">
-                            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center" id="wordNumber">0</h2>
-                            <p class="lead">Words 
+                            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center" id="wordNumber">0
+                            </h2>
+                            <p class="lead">Words
                             </p>
                         </div>
-                        <!-- <div class="col">
-                            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center" id="paragraphsNumber">0</h2>
-                            <p class="lead">Paragraphs  
-                            </p>
-                        </div> -->
-
                     </div>
-
-                    
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" id="clearButton">Clear</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="upperCaseButton">Uppercase</button> 
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="lowerCaseButton">Lowercase</button> 
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="captilizeButton">Captilize</button> 
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="copyButton">Copy</button> 
-                        </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
+                            id="clearButton">Clear</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+                            id="upperCaseButton">Uppercase</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+                            id="lowerCaseButton">Lowercase</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+                            id="captilizeButton">Captilize</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+                            id="copyButton">Copy</button>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
-
-    <div class="container col-xxl-8 px-4 py-5">
-
-    </div>
+    <script>
+  // Initialize all tooltips on the page
+  document.addEventListener("DOMContentLoaded", function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+  });
+</script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../counter/counter.js"></script>
 </body>

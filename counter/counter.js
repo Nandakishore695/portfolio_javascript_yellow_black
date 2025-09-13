@@ -1,4 +1,4 @@
-const myInput = document.getElementById("wordCount");
+const myInput = document.getElementById("wordCount")
 
 // event Button id
 const upperCaseButton = document.getElementById("upperCaseButton");
@@ -12,23 +12,23 @@ const charactorsNumber = document.getElementById("charactorsNumber");
 const wordNumber = document.getElementById("wordNumber");
 const paragraphsNumber = document.getElementById("paragraphsNumber");
 
-const ar = ["aa", "bb", "cc"];
-console.log(ar.length);
-
-myInput.focus();
+// myInput.focus();
 let inputValueUser = "";
 
 myInput.addEventListener("keyup", function (event) {
   inputValueUser = event.target.value;
   charactorsNumber.innerText = inputValueUser.length;
-
   //word count  
-  inputValueUser = inputValueUser.split(" ");
-  wordNumber.innerText = inputValueUser.length;
-
+  WordUpdate();
 });
 
+function WordUpdate() {
+  let wordValueUser = inputValueUser.split(" ");
+  wordNumber.innerText = wordValueUser.length;
+}
+
 upperCaseButton.addEventListener("click", function () {
+
   inputValueUser = inputValueUser.toUpperCase();
   myInput.value = inputValueUser;
 });
@@ -39,10 +39,9 @@ lowerCaseButton.addEventListener("click", function () {
 });
 
 captilizeButton.addEventListener("click", function () {
-  inputValueUser =
-    inputValueUser.charAt(0).toUpperCase() +
-    inputValueUser.slice(1).toLowerCase();
-  myInput.value = inputValueUser;
+  let maaap = inputValueUser.split(" ");
+  const aaa = maaap.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(" ");
+  myInput.value = aaa;
 });
 
 clearButton.addEventListener("click", function () {
