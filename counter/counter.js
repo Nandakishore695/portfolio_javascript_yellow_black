@@ -12,7 +12,7 @@ const charactorsNumber = document.getElementById("charactorsNumber");
 const wordNumber = document.getElementById("wordNumber");
 const paragraphsNumber = document.getElementById("paragraphsNumber");
 
-// myInput.focus();
+myInput.focus();
 let inputValueUser = "";
 
 myInput.addEventListener("keyup", function (event) {
@@ -23,12 +23,17 @@ myInput.addEventListener("keyup", function (event) {
 });
 
 function WordUpdate() {
-  let wordValueUser = inputValueUser.split(" ");
-  wordNumber.innerText = wordValueUser.length;
+  if (!inputValueUser) {
+    wordNumber.innerText = 0;
+  }
+  else {
+    let wordValueUser = inputValueUser.split(" ");
+    wordNumber.innerText = wordValueUser.length;
+  }
+
 }
 
 upperCaseButton.addEventListener("click", function () {
-
   inputValueUser = inputValueUser.toUpperCase();
   myInput.value = inputValueUser;
 });
@@ -47,6 +52,9 @@ captilizeButton.addEventListener("click", function () {
 clearButton.addEventListener("click", function () {
   inputValueUser = "";
   myInput.value = inputValueUser;
+  charactorsNumber.innerText = 0;
+  wordNumber.innerText = 0;
+  myInput.focus();
 });
 
 copyButton.addEventListener("click", function () {
@@ -55,6 +63,7 @@ copyButton.addEventListener("click", function () {
     myInput.focus();
   } else {
     navigator.clipboard.writeText(inputValueUser);
+    alert("You Copyed Text");
   }
 });
 

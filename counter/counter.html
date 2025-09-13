@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Word Counter</title>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: #F7C01D;">
     <div class="container my-5 col-xxl-10 px-4 py-5">
         <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5 dd">
             <a type="button" href="https://nandakishore695.github.io/portfolio_javascript_yellow_black/"
@@ -19,21 +19,20 @@
                 ></a>
             <div class="row flex-lg-row-reverse align-items-center g-5 py-lg-5">
                 <div class="col-10 col-sm-8 col-lg-5">
-                    <textarea class="form-control form-control-lg " placeholder="Enter Your Text Here..." id="wordCount"
+                    <textarea class="form-control form-control-lg" placeholder="Enter Your Text Here..." id="wordCount" style="background-color: #FEF7ED;"
                         aria-label=".form-control-lg example" autocomplete="off"></textarea>
                 </div>
                 <div class="col-lg-7">
                     <div class="py-lg-5">
-                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-start">Count Your Charactor <br>
-                            Like a
-                            Boss...</h1>
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-start">Count Your characters<br>
+                            Like a Boss...</h1>
                     </div>
                     <hr>
                     <div class="row py-lg-5">
                         <div class="col">
                             <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center"
                                 id="charactorsNumber">0</h2>
-                            <p class="lead">Charactors
+                            <p class="lead">characters
                             </p>
                         </div>
                         <div class="col">
@@ -44,7 +43,7 @@
                         </div>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
+                        <button type="button" class="btn btn-danger btn-lg px-4 me-md-2"
                             id="clearButton">Clear</button>
                         <button type="button" class="btn btn-outline-secondary btn-lg px-4"
                             id="upperCaseButton">Uppercase</button>

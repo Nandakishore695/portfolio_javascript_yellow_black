@@ -1,5 +1,4 @@
-.dd{background: linear-gradient(to left, #FEF7ED 30%, #FECD67 70%);}
-
+.dd{background: linear-gradient(to left, #FEF7ED 50%, #FECD67 70%);}
 @media (max-width: 600px) {
     .dd{ background: linear-gradient(to top, #FEF7ED 30%, #FECD67 70%);}
 }
