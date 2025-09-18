@@ -7,190 +7,246 @@
     <meta name="author" content="Vishwanath Nandakishore" />
     <meta name="description"
         content="Front-end developer skilled in HTML, CSS, Bootstrap & JavaScript, building fast, responsive, SEO-friendly websites." />
-    <link rel="shortcut icon" href="../../images/javascript_favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../images/javascript_favicon.png" type="image/x-icon" />
     <title>Todo | Today</title>
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/style.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body style="background-color: #E0DFFF;">
-    <div class="container px-1  bg-light mt-5 rounded-3" id="featured-3" >
-        <div class="position-relative p-5 text-muted" >
+<body style="background-color: #e0dfff">
+    <div class="container px-1 bg-light mt-5 rounded-3" id="featured-3">
+        <div class="position-relative p-5 text-muted">
             <a type="button" href="https://nandakishore695.github.io/portfolio_javascript_yellow_black/"
                 class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill"
                 aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="top"
                 data-bs-title="Back To Portfolio"></a>
             <h1 class="pb-2 border-bottom text-black">To-Do | Today List...</h1>
-            <div class="row g-4 mt-4 row-cols-1 row-cols-lg-3 border border-1 rounded-3 p-3 shadow">
+            <button type="button" class="btn btn-primary" id="addModel" data-bs-toggle="modal"
+                data-bs-target="#todoListAddTask">Add New Task</button>
+            <div class="row g-4 mt-4 row-cols-1 row-cols-lg-3 border border-1 rounded-3 p-3 shadow ">
+                <div class="feature col-3 ">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#collection"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p> <a href="#"
+                        class="icon-link">
+                        Call to action
+                        <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> </a>
+                </div>
+                    <div class="feature col-3 ">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#collection"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p> <a href="#"
+                        class="icon-link">
+                        Call to action
+                        <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> </a>
+                </div>
+                <div class="feature col-3 ">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#collection"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                        sentence and probably just keep going until we run out of words.</p> <a href="#"
+                        class="icon-link">
+                        Call to action
+                        <svg class="bi" aria-hidden="true">
+                            <use xlink:href="#chevron-right"></use>
+                        </svg> </a>
+                </div>
                 <span id="output"></span>
-                
-                <div class="feature col-3 mt-0 p-1 ">
-                    <div class="border border-black rounded-3 p-2">
 
+                <div class="feature col-3 mt-0 p-1">
+                    <div class="border border-black rounded-3 p-2">
                         <h2 class="fs-2 text-body-emphasis">Social Media</h2>
                         <ul>
                             <li>Plan social content</li>
                             <li>-Build content calendar</li>
                             <li>-Plan pramation and distribution</li>
                         </ul>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence
-                            and probably just keep going until we run out of words.</p> <a href="#" class="icon-link"
-                            data-bs-toggle="modal" data-bs-target="#todoListModal">
-                            View
-                            <svg class="bi" aria-hidden="true">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg> </a>
-                    </div>
-
-                </div>
-                <div class="feature col-3 mt-0 p-1">
-                    <div class="border border-black rounded-3 p-2">
-                        <h3 class="fs-2 text-body-emphasis">Content Strategy</h3>
                         <p>
-                            Would need time to get insights (goals, personals, budget, audits), but after, it would be
-                            good
-                            to
-                            focus on assembling my team (start with SEO specialist, then perhaps on email marketer?).
-                            Also
-                            need
-                            to brainstorm on tooling.</p> <a href="#" class="icon-link" data-bs-toggle="modal"
-                            data-bs-target="#todoListModal">
+                            Paragraph of text beneath the heading to explain the heading.
+                            We'll add onto it with another sentence and probably just keep
+                            going until we run out of words.
+                        </p>
+                        <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#todoListModal">
                             View
                             <svg class="bi" aria-hidden="true">
                                 <use xlink:href="#chevron-right"></use>
-                            </svg> </a>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="feature col-3 mt-0 p-1">
                     <div class="border border-black rounded-3 p-2">
-                        <h3 class="fs-2 text-body-emphasis">Email A/B Tests</h3>
+                        <h2 class="fs-2 text-body-emphasis">Social Media</h2>
                         <ul>
-                            <li>Subject lines</li>
-                            <li>-Sender</li>
-                            <li>-CTA</li>
-                            <li>-Sending nimes</li>
+                            <li>Plan social content</li>
+                            <li>-Build content calendar</li>
+                            <li>-Plan pramation and distribution</li>
                         </ul>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence
-                            and probably just keep going until we run out of words.</p> <a href="#" class="icon-link"
-                            data-bs-toggle="modal" data-bs-target="#todoListModal">
+                        <p>
+                            Paragraph of text beneath the heading to explain the heading.
+                            We'll add onto it with another sentence and probably just keep
+                            going until we run out of words.
+                        </p>
+                        <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#todoListModal">
                             View
                             <svg class="bi" aria-hidden="true">
                                 <use xlink:href="#chevron-right"></use>
-                            </svg> </a>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="feature col-3 mt-0 p-1">
                     <div class="border border-black rounded-3 p-2">
-                        <h3 class="fs-2 text-body-emphasis">Email A/B Tests</h3>
+                        <h2 class="fs-2 text-body-emphasis">Social Media</h2>
                         <ul>
-                            <li>Subject lines</li>
-                            <li>-Sender</li>
-                            <li>-CTA</li>
-                            <li>-Sending nimes</li>
+                            <li>Plan social content</li>
+                            <li>-Build content calendar</li>
+                            <li>-Plan pramation and distribution</li>
                         </ul>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                            sentence
-                            and probably just keep going until we run out of words.</p> <a href="#" class="icon-link"
-                            data-bs-toggle="modal" data-bs-target="#todoListModal">
+                        <p>
+                            Paragraph of text beneath the heading to explain the heading.
+                            We'll add onto it with another sentence and probably just keep
+                            going until we run out of words.
+                        </p>
+                        <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#todoListModal">
                             View
                             <svg class="bi" aria-hidden="true">
                                 <use xlink:href="#chevron-right"></use>
-                            </svg> </a>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="feature col-3 mt-0 p-1">
+                    <div class="border border-black rounded-3 p-2">
+                        <h2 class="fs-2 text-body-emphasis">Social Media</h2>
+                        <ul>
+                            <li>Plan social content</li>
+                            <li>-Build content calendar</li>
+                            <li>-Plan pramation and distribution</li>
+                        </ul>
+                        <p>
+                            Paragraph of text beneath the heading to explain the heading.
+                            We'll add onto it with another sentence and probably just keep
+                            going until we run out of words.
+                        </p>
+                        <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#todoListModal">
+                            View
+                            <svg class="bi" aria-hidden="true">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
-                <div class="feature col-3 mt-0 p-1 border border-black text-center py-5 rounded-3"
-                    style="background-color: #E9ECEF;">
-                    <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#todoListAddTask"> <img
-                            src="../../projects_javascript/todo_task/images/add_plus_logo.svg" class="w-25"
-                            id="addModel" width="100" height="100" />
-                        <svg class="bi" aria-hidden="true">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg> </a>
-                </div>
-            </div>
 
-
-            <!-- Modal Edit and Delete-->
-            <div class="modal fade" id="todoListModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
-                <div class="modal-dialog modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
-                            <button type="button" class="btn btn-primary"
-                                style="background-color: #F7C01D; border: #F7C01D 1px solid;">Edit</button>
+                <!-- Modal Edit and Delete-->
+                <div class="modal fade" id="todoListModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                    Modal title
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">...</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                    Delete
+                                </button>
+                                <button type="button" class="btn btn-primary"
+                                    style="background-color: #f7c01d; border: #f7c01d 1px solid">
+                                    Edit
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Modal Add Task-->
-            <div class="modal fade" id="todoListAddTask" tabindex="-1" aria-labelledby="exampleModalLabel"
-                data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
-                <div class="modal-dialog modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Task</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="row">
-                                <div class="col-6 mb-3">
-                                    <label for="recipient-name" class="col-form-label">Title:</label>
-                                    <input type="text" class="form-control" id="todoTitle" />
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <label for="message-text" class="col-form-label">Date:</label>
-                                    <input type="date" class="form-control"  id="todoDate" />
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message-text" class="col-form-label">Priority:</label>
-                                    <div class="row">
-                                        <div class="col-3 mb-3">
-                                            <label for="message-text" class="col-form-label">Extreme:</label>
-                                            <input tye="checkbox" class="form-control"  />
-                                        </div>
-                                        <div class="col-3 mb-3">
-                                            <label for="message-text" class="col-form-label">Moderate:</label>
-                                            <input tye="checkbox" class="form-control" />
-                                        </div>
-                                        <div class="col-3 mb-3">
-                                            <label for="message-text" class="col-form-label">Low:</label>
-                                            <input tye="checkbox" class="form-control"  />
+                <!-- Modal Add Task-->
+                <div class="modal fade" id="todoListAddTask" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                    Add New Task
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="row">
+                                    <div class="col-6 mb-3">
+                                        <label for="recipient-name" class="col-form-label">Title:</label>
+                                        <input type="text" class="form-control" id="todoTitle" />
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label for="message-text" class="col-form-label">Date:</label>
+                                        <input type="date" class="form-control" id="todoDate" />
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Priority:</label>
+                                        <div class="">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="levelWork"
+                                                    id="inlineRadio1" value="extreme">
+                                                <label class="form-check-label" for="inlineRadio1">Extreme:</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="levelWork"
+                                                    id="inlineRadio2" value="moderate">
+                                                <label class="form-check-label" for="inlineRadio2">Moderate:</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="levelWork"
+                                                    id="inlineRadio3" value="low">
+                                                <label class="form-check-label" for="inlineRadio3">Low:</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-<div class="col-12 ">
+                                    <div class="col-12">
                                         <label for="message-text" class="col-form-label">Task Description:</label>
-                                        <textarea type="text" class="form-control" style="height: 200px;"
+                                        <textarea type="text" class="form-control" style="height: 200px"
                                             id="todoDescription"></textarea>
                                     </div>
-                                
-
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn text-black border border-white"
-                                style="background-color: #E0DFFF;" id="todoCreate">Save</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn text-black border border-white"
+                                    style="background-color: #e0dfff" id="todoCreate">
+                                    Save
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./todo.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./todo.js"></script>
 </body>
 
 </html>
