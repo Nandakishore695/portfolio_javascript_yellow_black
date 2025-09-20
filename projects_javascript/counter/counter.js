@@ -63,7 +63,11 @@ copyButton.addEventListener("click", function () {
     myInput.focus();
   } else {
     navigator.clipboard.writeText(inputValueUser);
-    alert("You Copyed Text");
+    
+    copyButton.textContent = "Coped!"
+    setTimeout(()=>{
+      copyButton.textContent = "Copy"
+    },2000)
   }
 });
 
