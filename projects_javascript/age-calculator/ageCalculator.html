@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Vishwanath Nandakishore" />
     <meta name="description"
         content="Front-end developer skilled in HTML, CSS, Bootstrap & JavaScript, building fast, responsive, SEO-friendly websites." />
-        <link rel="shortcut icon" href="./images/javascript_favicon.png" type="image/x-icon">
-    <title></title>
+    <link rel="shortcut icon" href="../../images/javascript_favicon.png" type="image/x-icon">
+    <title>Age Calculate!</title>
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    
+
+<body style="background-color: #6C16E2;">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5 ">
+        <a type="button" href="https://nandakishore695.github.io/portfolio_javascript_yellow_black/"
+            class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-white bg-opacity-100 rounded-pill"
+            aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Back To Portfolio"></a>
+        <div class="row align-items-center g-lg-5 py-5 ">
+            <div class="col-md-10 mx-auto col-lg-6 bg-body-tertiary py-5 rounded-3" style="background-color: #A06FED;">
+                <form class="p-3 py-5 border rounded-3 shadow">
+                    <h1 class="pb-2 border-bottom text-black fs-3 fw-bold">Age Calculate! </h1>
+                    <div class="container px-0 ">
+                        <div class="row row-cols-2 row-cols-lg-2 g-2 g-lg-3 align-items-center">
+                            <div class="col-lg-6 col-12">
+                                <input type="date" class="w-100 form-control p-3" id="inputDate" />
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <button type="button" class="w-100 p-3 btn btn-primary fw-bold" id="calculatedAge">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="error" class="text-danger"></span>
+                    <div class="d-flex justify-content-lg-center  justify-content-between pt-5 text-center text-white ">
+                        <div class="col-lg-3 bg-dark m-1 p-lg-2 p-3 rounded-3">
+                            <span id="year" class="fs-3">-</span>
+                            <p>
+                                Years
+                            </p>
+                        </div>
+                        <div class="col-lg-3 bg-dark m-1 p-lg-2 p-2 rounded-3">
+                            <span id="months" class="fs-3">-</span>
+                            <p>
+                                Months
+                            </p>
+                        </div>
+                        <div class="col-lg-3 bg-dark m-1 p-lg-2 p-3 rounded-3">
+                            <span id="days" class="fs-3">-</span>
+                            <p>
+                                Days
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./ageCalculator.js"></script>
 </body>
+
 </html>
