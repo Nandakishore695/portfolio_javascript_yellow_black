@@ -5,13 +5,11 @@ const months = document.getElementById("months");
 const days = document.getElementById("days");
 
 calculatedAge.addEventListener("click", function () {
-    debugger
     if (!inputDate.value) {
         document.getElementById("error").textContent = "Sorry!, Could you please select a valid date.";
         return;
     }
     else {
-        debugger
         const birthDate = new Date(inputDate.value);
         const today = new Date();
         let isGetYear = today.getFullYear() - birthDate.getFullYear();
@@ -25,6 +23,5 @@ calculatedAge.addEventListener("click", function () {
         months.textContent = isGetMonth;
         days.textContent = isGetDate;
         document.getElementById("error").textContent = "";
-
     }
 })
