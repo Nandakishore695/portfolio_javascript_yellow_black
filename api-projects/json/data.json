@@ -4,11 +4,18 @@
         "name": "Nandakishore",
         "role": "React Developer",
         "email": "nanda@example.com",
-        "phoneNo" : 7893737971,
-        "gender" : "Male",
+        "phoneNo": 7893737971,
+        "gender": "Male",
         "location": "Hyderabad",
         "experience": "2.8 years",
-        "skill" : ["Javascsript", "React Js", "Redux Tookit", "Bootstrap", "Tailwind Css", "Typescript"],
+        "skill": [
+            "Javascsript",
+            "React Js",
+            "Redux Tookit",
+            "Bootstrap",
+            "Tailwind Css",
+            "Typescript"
+        ],
         "description": "Passionate frontend developer with 2.8 years of experience in building responsive and interactive web applications using React.js, JavaScript, and modern CSS frameworks."
     },
     {
@@ -16,25 +23,52 @@
         "name": "Priya",
         "role": "React Developer",
         "email": "priya@example.com",
-        "phoneNo" : 78937373,
-        "gender" : "Fe-Male",
+        "phoneNo": 78937373,
+        "gender": "Fe-Male",
         "location": "Bengaluru",
         "experience": "2.8 years",
-        "skill" : ["Javascsript", "React Js", "Redux Tookit", "Bootstrap", "Tailwind Css"],
+        "skill": [
+            "Javascsript",
+            "React Js",
+            "Redux Tookit",
+            "Bootstrap",
+            "Tailwind Css"
+        ],
         "description": "Creative developer skilled in HTML, CSS, and JavaScript with a focus on building accessible and user-friendly interfaces."
-
     },
     {
         "id": 3,
         "name": "Swathi Priya",
         "role": "React Developer",
         "email": "swathipriya@example.com",
-        "phoneNo" : 78937371,
-        "gender" : "Fe-Male",
+        "phoneNo": 78937371,
+        "gender": "Fe-Male",
         "location": "Bengaluru",
         "experience": "3 years",
-        "skill" : ["Javascsript", "React Js", "Redux Tookit", "Bootstrap", "Tailwind Css"],
+        "skill": [
+            "Javascsript",
+            "React Js",
+            "Redux Tookit",
+            "Bootstrap",
+            "Tailwind Css"
+        ],
         "description": "Versatile developer experienced in both frontend and backend technologies, delivering scalable and maintainable solutions."
-
+    },
+    {
+        "id": 4,
+        "name": "Ramesh Kom",
+        "role": "Java Developer",
+        "email": "java@example.com",
+        "phoneNo": 78937371,
+        "gender": "Male",
+        "location": "Bengaluru",
+        "experience": "3 years",
+        "skill": [
+            "Java",
+            "Spring Boot",
+            "Postman",
+            "Node Js"
+        ],
+        "description": "Versatile developer experienced in  backend technologies, delivering scalable and maintainable solutions."
     }
 ]
