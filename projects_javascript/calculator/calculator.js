@@ -1,29 +1,26 @@
-const calculation = document.getElementById("calculation");
-let oneBtn = document.getElementById("oneBtn");
-const twoBtn = document.getElementById("twoBtn").value;
-const threeBtn = document.getElementById("threeBtn");
-const foruBtn = document.getElementById("foruBtn");
-const fiveBtn = document.getElementById("fiveBtn");
-const sixBtn = document.getElementById("sixBtn");
-const sevenBtn = document.getElementById("sevenBtn");
-const eightBtn = document.getElementById("eightBtn");
-const nineBtn = document.getElementById("nineBtn");
+const calculationScreen = document.getElementById("calculationScreen");
+const buttons = document.querySelectorAll("button");
+const form = document.querySelector("form");
 
+buttons.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+        event.preventDefault(); // stop form submit        
+        const value = btn.textContent.trim();
+        if (value === "AC") {
+            calculationScreen.value = ""; // clear screen
+        } else if (value === "=") {
+            try {
+                // replace custom symbols with JS operators
+                const expression = calculationScreen.value
+                    .replace(/x/g, "*")
+                    .replace(/÷/g, "/");
 
-document.getElementById("calculationScreen").textContent = oneBtn;
-    console.log(oneBtn);
-    console.log(twoBtn);
-
-    const expression = 2+3
-calculation.addEventListener("submit", function(event){
-    event.defaultPrevented();
-    debugger
-    // const oneBtn = oneBtn.value;
-    // const twoBtn = twoBtn.value;
-    // console.log(oneBtn , twoBtn);
-    const output = eval(expression); 
-    console.log(output);
-    
-    
-
+                calculationScreen.value = eval(expression);
+            } catch {
+                calculationScreen.value = "Error";
+            }
+        } else {
+            calculationScreen.value += value; // append clicked value
+        }
+    });
 });

@@ -23,93 +23,80 @@
             <div class="col-md-10 mx-auto col-lg-5">
                 <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                     <h1 class="pb-2 border-bottom text-black fs-3">Calculator Application</h1>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="calculationScreen" readonly />
+                    <div class="form-floating mb-3"> 
+                        <input type="text" class="form-control text-end fs-3" id="calculationScreen" readonly />  
                     </div>
 
                     <div class="row px-3">
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold w-100 border border-1"
-                                style="color: #F58939;">AC</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">x</button>
-                        </div>
-                        <div class="col-3 p-0 ">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">%</button>
-                        </div>
-                        <div class="col-3 p-0 ">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">÷</button>
-                        </div>
-
-                        <div class="col-3 p-0 ">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">7</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">8</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">9</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">x</button>
-                        </div>
-
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">4</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">5</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">6</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">-</button>
-                        </div>
-
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1" value="1"
-                                id="oneBtn">1</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button"
-                                class="p-4 fw-bold text-black fw-bold text-black w-100 border border-1" value="2"
-                                id="twoBtn">2</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1" value="3"
-                                id="threeBtn">3</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1" id="addModel"
-                                data-bs-toggle="modal" data-bs-target="#todoListAddTask">+</button>
-                        </div>
-
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1">.</button>
-                        </div>
-                        <div class="col-3 p-0">
-                            <button type="button" class="p-4 fw-bold text-black w-100 border border-1"
-                                data-bs-target="#todoListAddTask">0</button>
-                        </div>
-                        <div class="col-6 p-0">
-                            <button type="submit" class="p-4 fw-bold text-white  border border-1 w-100"
-                                style="background-color: #F58939;" id="calculation">=</button>
-                        </div>
-
+                    <div class="col-3 p-0">
+                       <button type="button" class="p-4 fw-bold w-100 border border-1" style="color: #F58939;">AC</button>
                     </div>
+                    <div class="col-3 p-0">
+                      <button type="button" class="p-4 fw-bold text-black w-100 border border-1" ><img src="./images/undo_logo.svg" alt="undo" ></button>
+                    </div>
+                      <div class="col-3 p-0 ">
+                     <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >%</button>
+                    </div>
+                    <div class="col-3 p-0 ">
+                     <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >÷</button>
+                    </div>
+
+                     <div class="col-3 p-0 ">
+                        <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >7</button>
+                    </div>
+                    <div class="col-3 p-0">
+                       <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >8</button>
+                    </div>
+                     <div class="col-3 p-0">
+                    <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >9</button>
+                    </div>
+                    <div class="col-3 p-0">
+                     <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >x</button>
+                    </div>
+
+                    <div class="col-3 p-0">
+                        <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >4</button>
+                    </div>
+                    <div class="col-3 p-0">
+                       <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >5</button>
+                    </div>
+                     <div class="col-3 p-0">
+                       <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >6</button>
+                    </div>
+                    <div class="col-3 p-0">
+                        <button type="button" class="p-4 fw-bold text-black w-100 border border-1" >-</button>
+                    </div>
+
+                    <div class="col-3 p-0">
+                        <button type="button" class="p-4 fw-bold text-black w-100 border border-1" value="1" id="oneBtn">1</button>
+                    </div>
+                    <div class="col-3 p-0">
+                        <button type="button" class="p-4 fw-bold text-black fw-bold text-black w-100 border border-1" value="2" id="twoBtn">2</button>
+                    </div>
+                     <div class="col-3 p-0">
+                        <button type="button" class="p-4 fw-bold text-black w-100 border border-1" value="3" id="threeBtn">3</button>
+                    </div>
+                    <div class="col-3 p-0">
+                        <button type="button" class="p-4 fw-bold text-black w-100 border border-1" id="addModel" data-bs-toggle="modal"
+                data-bs-target="#todoListAddTask">+</button>
+                    </div>
+
+                    <div class="col-3 p-0">
+                       <button type="button" class="p-4 fw-bold text-black w-100 border border-1">.</button>
+                    </div>
+                    <div class="col-3 p-0">
+                    <button type="button" class="p-4 fw-bold text-black w-100 border border-1"
+                data-bs-target="#todoListAddTask">0</button>
+                    </div>
+                     <div class="col-6 p-0">
+                        <button type="submit" class="p-4 fw-bold text-white  border border-1 w-100" style="background-color: #F58939;" id="calculation">=</button>
+                    </div>
+                
+                </div>
                 </form>
             </div>
         </div>
     </div>
-    <script>
-        // Initialize all tooltips on the page
-        document.addEventListener("DOMContentLoaded", function () {
-            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-            [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
-        });
-    </script>
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="./calculator.js"></script>
 </body>
