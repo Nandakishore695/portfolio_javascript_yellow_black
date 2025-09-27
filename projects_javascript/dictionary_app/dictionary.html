@@ -29,6 +29,13 @@
             <div id="result" class="text-start"></div>
         </div>
     </div>
+    <script>
+  // Initialize all tooltips on the page
+  document.addEventListener("DOMContentLoaded", function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+  });
+</script>
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="./dictionary.js"></script>
 </body>
