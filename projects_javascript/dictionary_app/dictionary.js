@@ -18,7 +18,7 @@ wordSearch.addEventListener("submit", function (event) {
 
 async function dictionaryapi() {
     try {
-        const respone = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${isInput}`);
+        const respone = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${isInput}`); 
         if (!respone.ok) {
             throw new Error(`HTTP error! status: ${respone.status}`);
         }

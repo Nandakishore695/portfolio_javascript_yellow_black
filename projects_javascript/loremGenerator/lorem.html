@@ -20,17 +20,27 @@
             data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Back To Portfolio"></a>
         <div class="p-5 text-center bg-body-tertiary rounded-3">
             <h1 class="text-body-emphasis">Generate Your Own Lorem Ipsum</h1>
-            <div class="d-lg-flex gap-lg-2 gap-2 my-5"> 
+            <div class="d-lg-flex gap-lg-2 gap-2 my-5">
                 <input type="number" class="form-control" id="loremGenerateorNumber">
-                <button class=" align-items-center btn btn-primary btn-lg px-4 rounded-3 my-1 my-lg-0  " type="button" id="loremGenerateor"> Generate </button> 
-                <button class="btn btn-outline-secondary btn-lg px-4 rounded-3 my-1 my-lg-0 " type="button" id="copyLoremIpsum"> Copy </button> </div>
-                <p class="col-lg-8 mx-auto fs-5 text-muted" id="lorem">
+                <button class=" align-items-center btn btn-primary btn-lg px-4 rounded-3 my-1 my-lg-0  " type="button"
+                    id="loremGenerateor"> Generate </button>
+                <button class="btn btn-outline-secondary btn-lg px-4 rounded-3 my-1 my-lg-0 " type="button"
+                    id="copyLoremIpsum"> Copy </button>
+            </div>
+            <p class="col-lg-8 mx-auto fs-5 text-muted" id="lorem">
                 This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks
                 to a responsive class, and a customized call to action.
             </p>
         </div>
     </div>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize all tooltips on the page
+        document.addEventListener("DOMContentLoaded", function () {
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+        });
+    </script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script rel="preload" src="./lorem.js"></script>
 </body>
 
