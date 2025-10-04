@@ -8,7 +8,7 @@
     <meta name="description"
         content="Front-end developer skilled in HTML, CSS, Bootstrap & JavaScript, building fast, responsive, SEO-friendly websites." />
     <link rel="shortcut icon" href="../../images/javascript_favicon.png" type="image/x-icon">
-    <title>Dictionary App</title>
+    <title>Generate OTP</title>
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -20,16 +20,13 @@
             data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Back To Portfolio"></a>
         <div class="p-5 text-center bg-body-tertiary rounded-3">
             <h1 class="text-body-emphasis">Generate OTP Number</h1>
-            <form class="d-lg-flex gap-lg-2 gap-2 my-5" id="wordSearch">
-                <input type="text" class="form-control" id="wordSearchInput" disabled autocomplete="off" value="6958">
-                 <button class=" align-items-center btn btn-primary btn-lg px-4 rounded-3 my-1 my-lg-0" type="submit">
+            <form class="d-lg-flex gap-lg-2 gap-2 my-5" >
+                <input type="text" class="form-control" id="optResult" disabled autocomplete="off" value="6958">
+                 <button class=" align-items-center btn btn-primary btn-lg px-4 rounded-3 my-1 my-lg-0" id="generateOtp">
                     Generate </button>
-                      <button class=" align-items-center btn btn-primary btn-lg px-4 rounded-3 my-1 my-lg-0">
+                    <button class=" align-items-center btn btn-primary btn-lg px-4 rounded-3 my-1 my-lg-0" id="otpCopy">
                     Copy </button>
-
             </form>
-
-            <div id="result" class="text-start"></div>
         </div>
     </div>
     <script>
