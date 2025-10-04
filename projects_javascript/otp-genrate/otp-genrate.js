@@ -11,10 +11,9 @@ generateOtp.addEventListener("click", function (event) {
 
 otpCopy.addEventListener("click", function (event) {
     event.preventDefault();
-    navigator.clipboard.writeText(optNumber);
-otpCopy.textContent = "Copyed!"
-    setTimeout(()=>{
-otpCopy.textContent = "Copy"
-    },1500)
-
+    navigator.clipboard.writeText(optNumber || 6958);
+    otpCopy.textContent = "Copyed!"
+    setTimeout(() => {
+        otpCopy.textContent = "Copy"
+    }, 1500)
 });
