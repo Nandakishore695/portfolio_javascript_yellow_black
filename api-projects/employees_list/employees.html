@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vishwanath Nandakishore" />
+    <meta name="description"
+        content="Front-end developer skilled in HTML, CSS, Bootstrap & JavaScript, building fast, responsive, SEO-friendly websites." />
+    <link rel="shortcut icon" href="../../images/javascript_favicon.png" type="image/x-icon" />
+    <title>Employees List</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <a type="button" href="https://nandakishore695.github.io/portfolio_javascript_yellow_black/#api_projects"
+            class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-white bg-opacity-100 rounded-pill"
+            aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Back To Portfolio"></a>
+        <main>
+            <section>
+                <div class="py-5 text-center">
+                    <h1 class="h2">Employees List form</h1>
+                    <p class="lead">
+                        The employee form allows you to capture and manage staff details such as name, email, phone,
+                        location, and role. It ensures data is organized, accurate, and easy to update when required.
+                    </p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-7 col-lg-12">
+                        <h4 class="mb-3">Add New Employee</h4>
+                        <form class="needs-validation" novalidate="" id="employeeForm">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Priya" value=""
+                                        required="" autocomplete="off" />
+                                    <div class="invalid-feedback">
+                                        Valid name is required.
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com"
+                                        autocomplete="off" />
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address for shipping updates.
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="role" class="form-label">Role</label>
+                                    <div class="input-group has-validation">
+                                        <input type="text" class="form-control" id="role" placeholder="Developer"
+                                            required="" />
+                                        <div class="invalid-feedback">
+                                            Your role is required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="phoneNo" class="form-label">Phone Number </label>
+                                    <input type="text" class="form-control" id="phoneNo" placeholder="78937XXXXX"
+                                        required="" />
+                                    <div class="invalid-feedback">
+                                        Please enter your phone number.
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="gender" class="form-label">Gender</label>
+                                    <select class="form-select" id="gender" required="">
+                                        <option value="">Choose...</option>
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid gender.
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="location" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="location" placeholder="Bengaluru"
+                                        required="" />
+                                    <div class="invalid-feedback">
+                                        Please enter your location.
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="experience" class="form-label">Experience</label>
+                                    <input type="number" class="form-control" id="experience" placeholder="3.5"
+                                        required="" />
+                                    <div class="invalid-feedback">
+                                        Please enter your experience.
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="skill" class="form-label">Skill</label>
+                                    <select class="form-select" id="skill" required="">
+                                        <option value="">Choose...</option>
+                                        <option>JavaScript</option>
+                                        <option>React Js</option>
+                                        <option>Next Js</option>
+                                        <option>Express Js</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid skill.
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-check my-4">
+                                <input type="checkbox" class="form-check-input" id="same-address" />
+                                <label class="form-check-label" for="same-address">I agree to the terms and
+                                    conditions</label>
+                            </div>
+                            <hr class="my-4" />
+                            <button class="w-100 btn btn-primary btn-lg" type="submit">
+                                Continue to Save
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="my-5 py-5 border-1 border rounded-3">
+                <div class="row text-center">
+                    <div class="col bg-success text-white">
+                        ID
+                    </div>
+                    <div class="col bg-success text-white">
+                        Name
+                    </div>
+                    <div class="col bg-success text-white">
+                        Email
+                    </div>
+                    <div class="col bg-success text-white">
+                        Role
+                    </div>
+                    <div class="col bg-success text-white">
+                        Phone Number
+                    </div>
+                    <div class="col bg-success text-white">
+                        Gender
+                    </div>
+                    <div class="col bg-success text-white">
+                        Location
+                    </div>
+                    <div class="col bg-success text-white">
+                        Experience
+                    </div>
+                    <div class="col bg-success text-white">
+                        Skill
+                    </div>
+                    <div class="col bg-success text-white">
+                        Action
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col ">
+                        1
+                    </div>
+                    <div class="col ">
+                        Nandakishore
+                    </div>
+                    <div class="col ">
+                        nanda@example.com"
+                    </div>
+                    <div class="col ">
+                        React Developer
+                    </div>
+                    <div class="col ">
+                        7893737971
+                    </div>
+                    <div class="col ">
+                        Male
+                    </div>
+                    <div class="col ">
+                        Hyderabad
+                    </div>
+                    <div class="col ">
+                        2.8 years
+                    </div>
+                    <div class="col ">
+                        Javascsript
+                    </div>
+                    <div class="col ">
+                        <button type="button">Edit</button>
+                        <button type="button">Delete</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+            <p class="mb-1">© 2021–2025 Sathya Technologies</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        // Initialize all tooltips on the page
+        document.addEventListener("DOMContentLoaded", function () {
+            const tooltipTriggerList = document.querySelectorAll(
+                '[data-bs-toggle="tooltip"]'
+            );
+            [...tooltipTriggerList].map((el) => new bootstrap.Tooltip(el));
+        });
+    </script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./employees.js"></script>
+</body>
+
+</html>
