@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vishwanath Nandakishore" />
+    <meta name="description"
+        content="Front-end developer skilled in HTML, CSS, Bootstrap & JavaScript, building fast, responsive, SEO-friendly websites." />
+    <link rel="shortcut icon" href="../../images/javascript_favicon.png" type="image/x-icon">
+    <title>QR Code Generator</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #0A1B27;">
+    <div class="container my-5 col-lg-4 px-4 py-5">
+        <a type="button" href="https://nandakishore695.github.io/portfolio_javascript_yellow_black/#api_projects"
+            class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-white rounded-pill" aria-label="Close"
+            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Back To Portfolio"></a>
+        <div class="p-5 bg-body-tertiary rounded-3">
+            <h1 class="text-body-emphasis">QR Code Generator</h1>
+            <form>
+                <div class="mb-3 text-start">
+                    <label for="qr_code_generator" class="form-label">Enter Your Text or URL</label>
+                    <input type="text" class="form-control" id="qr_code_generator" placeholder="Enter your text or URL"
+                        required>
+                </div>
+                <div id="result" class="mb-3"></div>
+                <button type="submit" class="btn btn-primary">Generator QR Code</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Initialize all tooltips on the page
+        document.addEventListener("DOMContentLoaded", function () {
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+        });
+    </script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./qr_code_generator.js"></script>
+</body>
+
+</html>
